@@ -24,7 +24,7 @@
 <script>
   log("Hello world!");
 
-  var b = Bugout("A");
+  var b = new Bugout("someroom", {announce: ["wss://tracker.openwebtorrent.com"]})
   b.on("seen", function(address) { log(address + " [ seen ]"); });
   log(b.address() + " [ me ]");
   
